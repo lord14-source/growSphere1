@@ -1,0 +1,86 @@
+/* Main Layout */
+.main-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the layout takes full height */
+    
+}
+
+/* Sidebar Styling */
+.sidebar {
+    background-color: #12d1ae; /* Set the background to white */
+    
+    padding: 20px;
+    width: 200px; /* Fixed width for sidebar */
+    box-shadow: 0 4px 8px rgba(231, 222, 222, 0.1); /* You can change the box-shadow if needed */
+    margin-top: 65px; /* Space below fixed header */
+    margin-right: 2px;
+    position: relative;
+}
+.side-link {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #0f1011;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+
+}
+
+.side-link:hover {
+    background-color: #9ba3ab;
+    color: white;
+}
+
+.side-link:active {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Content Area Styling */
+.content {
+    flex: 1; /* Make this take up the remaining space */
+    padding: 20px; /* Add some padding */
+    margin-left: 220px;
+    
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #343a40; /* Dark background for footer */
+    color: white;
+    padding: 20px 0; /* Add padding for spacing */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure footer stays at bottom */
+}
+
+.footer-text {
+    color: #adb5bd; /* Footer text color */
+    margin: 0; /* Remove margin */
+}
+
+.footer-text a {
+    color: #f8f9fa; /* Link color in footer */
+    text-decoration: none; /* Remove underline from footer links */
+}
+
+.footer-text a:hover {
+    text-decoration: underline; /* Underline on hover for footer links */
+}
+
+.social-links {
+    margin-top: 10px; /* Space above social links */
+}
+
+.social-icon {
+    color: #adb5bd; /* Icon color */
+    font-size: 24px; /* Size of icons */
+    margin: 0 10px; /* Space between icons */
+    transition: color 0.3s ease; /* Transition effect for hover */
+}
+
+.social-icon:hover {
+    color: #ffffff; /* Color on hover */
+}

@@ -1,38 +1,215 @@
-.App {
-  text-align: center;
+/* General App Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Header */
+header {
+  background-color: #343a40; /* Dark background for header */
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header img {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Navbar */
+.navbar {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  padding: 10px 20px; /* Padding for comfortable spacing */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: white !important; /* Ensure the brand name is white */
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Spacing between logo and text */
+}
+
+.nav-link {
+  color: white !important; /* Override Bootstrap's default link color */
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Smooth hover transition */
+}
+
+.nav-link:hover {
+  color: #f8f9fa !important; /* Light color on hover */
+}
+
+.dropdown-menu {
+  background-color: #343a40; /* Dark background for dropdown */
+}
+
+.dropdown-item {
+  color: #f8f9fa !important; /* White dropdown links */
+  font-size: 1rem;
+}
+
+.dropdown-item:hover {
+  background-color: #007bff; /* Blue background on hover */
+}
+
+/* Buttons */
+button {
+  background-color: #007bff; /* Primary button color */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 0 5px; /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover and active states */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+button:active {
+  transform: translateY(0); /* Reset lift on active */
+}
+
+button.logout {
+  background-color: #dc3545; /* Red background for logout */
+}
+
+button.logout:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+button.show-map, button.hide-map {
+  background-color: #28a745; /* Green background for show/hide map */
+}
+
+button.show-map:hover, button.hide-map:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Search bar and button attachment */
+.form-inline {
+  display: flex; /* Aligns the input and button horizontally */
+}
+
+.form-inline .form-control {
+  width: 200px; /* Adjust search box width */
+  border-top-right-radius: 0; /* Remove the right border radius */
+  border-bottom-right-radius: 0; /* Remove the right border radius */
+}
+
+.form-inline .btn {
+  border-top-left-radius: 0; /* Remove the left border radius */
+  border-bottom-left-radius: 0; /* Remove the left border radius */
+  background-color: white;
+  border: 1px solid #6c757d;
+  color: #343a40;
+  margin-left: -1px; /* Remove gap between input and button */
+}
+
+.form-inline .btn:hover {
+  background-color: #f8f9fa;
+}
+
+/* Farm Details */
+.farm {
+  background-color: #ffffff; /* White background for farm details */
+  border: 1px solid #dee2e6; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px; /* Space around the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.farm h2 {
+  margin-top: 0;
+}
+
+/* Map Controls */
+.map {
+  background-color: #ffffff; /* White background for map controls */
+  border: 1px solid #dee2e6; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  padding: 20px; /* Padding inside the box */
+  margin: 20px; /* Space around the box */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.map label {
+  margin-right: 10px;
+}
+
+.map input[type="number"] {
+  width: 120px; /* Adjust width of latitude/longitude inputs */
+  margin-right: 10px;
+}
+
+/* Pro Class */
+.pro {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Navbar Toggler */
+.navbar-toggler {
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.navbar-toggler-icon {
+  filter: invert(1); /* Makes the icon white */
+}
+
+/* Logout/Login Button Styles */
+.logout, .login {
+  background-color: #007bff;
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Transition for hover and active states */
+  cursor: pointer;
+}
+
+.logout:hover, .login:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+.logout:active, .login:active {
+  transform: translateY(0); /* Reset lift on active */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px 10px; /* Adjust padding on smaller screens */
   }
-  to {
-    transform: rotate(360deg);
+
+  .farm, .map {
+    margin: 10px; /* Reduce margin for smaller screens */
+    padding: 15px; /* Reduce padding for smaller screens */
+  }
+
+  .form-inline .form-control {
+    width: 150px; /* Adjust search box width for smaller screens */
+  }
+
+  .form-inline .btn {
+    padding: 5px 10px; /* Adjust button padding for smaller screens */
+  }
+
+  button {
+    font-size: 0.9rem; /* Slightly smaller font size for buttons */
   }
 }

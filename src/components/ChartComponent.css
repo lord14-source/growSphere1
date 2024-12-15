@@ -1,0 +1,14 @@
+/* Chart Container */
+.chart-container {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  /* Chart Titles */
+  .chart-container h4 {
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  

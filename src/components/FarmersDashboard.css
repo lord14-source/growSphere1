@@ -1,0 +1,199 @@
+/* Sidebar Styling */
+.sidebar {
+  background-color: #12d1ae; /* Set the background to white */
+  
+  padding: 20px;
+  width: 200px; /* Fixed width for sidebar */
+  box-shadow: 0 4px 8px rgba(231, 222, 222, 0.1); /* You can change the box-shadow if needed */
+  margin-top: 65px; /* Space below fixed header */
+  margin-right: 2px;
+  position: relative;
+}
+.side-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #0f1011;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+
+}
+
+.side-link:hover {
+  background-color: #9ba3ab;
+  color: white;
+}
+
+.side-link:active {
+  background-color: #0056b3;
+  color: white;
+}
+
+
+
+/* Content Area Styling */
+.content {
+  flex: 1; /* Make this take up the remaining space */
+  padding: 20px; /* Add some padding */
+  margin-left: 220px;
+}
+
+/* Main Layout */
+.main-layout {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the layout takes full height */
+}
+
+/* General Layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #3e2a2a;
+  height: auto; /* Adjusts height to content */
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping on smaller screens */
+  justify-content: center;
+  margin: 10px;
+  gap: 10px; /* Consistent spacing between items */
+}
+
+.filters input,
+.filters select {
+  width: 200px; /* Fixed width for all inputs and dropdowns */
+  padding: 10px; /* Uniform padding for all fields */
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  box-sizing: border-box; /* Ensures consistent sizing */
+}
+
+.filters input:focus,
+.filters select:focus {
+  border-color: #00a1d6;
+  outline: none;
+}
+
+.search-button {
+  font-size: 10px;
+  background-color: #26afdc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #008db4;
+}
+
+.chart-container {
+  background-color: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.chart-container h3 {
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+  }
+
+  .filters input,
+  .filters select {
+    width: 100%; /* Full-width on smaller screens */
+    max-width: 300px; /* Prevent overly large inputs */
+    display: inline;
+  }
+}
+
+.field {
+  display: flex;
+  gap: 65px;
+}
+
+/* FarmersDashboard.css */
+.main {
+  display: flex;
+}
+
+/* FarmersDashboard Layout */
+.dashboard-container {
+  margin-left: 250px; /* This ensures that the main content doesn't overlap with the sidebar */
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.filters {
+  margin-bottom: 20px;
+  margin-top: -15px;
+}
+
+.state-dropdown,
+.district-dropdown {
+  margin-right: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.field {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input {
+  padding: 10px;
+  width: 30%;
+  margin-bottom: 10px;
+}
+
+.btn.custom-blue-btn {
+  padding: 10px 20px;
+  background-color: #00a1d6;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.custom-blue-btn:hover {
+  background-color: #008ba3;
+}
+
+.chart-title {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
