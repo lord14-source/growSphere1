@@ -1,0 +1,78 @@
+.main-container {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh; /* Ensure the full height of the viewport is used */
+  overflow: hidden;
+  z-index: 0;
+}
+
+/* Ensure header is not sticky */
+.main-container header {
+  position: relative !important; /* Reset to normal flow */
+  top: auto !important;
+  z-index: auto !important;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #0a0202;
+  padding-top: 20px;
+  overflow-y: auto; /* Sidebar content scrolls if it overflows */
+  z-index: 1;
+}
+
+.filter-container {
+  margin-left: 250px; /* To avoid content overlapping with sidebar */
+  padding: 20px;
+  width: calc(100% - 250px); /* Dynamic width based on sidebar width */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  height: 100vh; /* Takes full height of the viewport */
+}
+
+h3, h4, h5, h6 {
+  margin-top: 20px;
+}
+
+select {
+  padding: 10px;
+  width: 250px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.btn:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.custom-checkbox input {
+  margin-right: 10px;
+}
+
+.side-link {
+  display: block;
+  padding: 10px;
+  margin: 10px 0;
+  color: #333;
+  text-decoration: none;
+}
+
+.side-link:hover {
+  background-color: #ddd;
+}
+
+.active-link {
+  background-color: #00a1d6;
+  color: white;
+}

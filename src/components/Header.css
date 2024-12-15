@@ -1,0 +1,51 @@
+/* Header.css */
+
+/* Align the nav-buttons in a single line */
+.nav-buttons {
+  display: flex;
+  align-items: center; /* Vertically center the buttons */
+  color: blue;
+  margin-left: -10px;
+}
+
+/* Custom blue button */
+.btn-custom-blue {
+  background-color:#007bff; /* Replace with your desired shade of blue */
+  color: rgb(203, 21, 21); /* Ensure text is white for contrast */
+  border: 1px solid transparent; /* Remove default border */
+}
+.nav-item{
+  margin-right: 100px;
+}
+
+.btn-custom-blue:hover {
+  background-color: #0056b3; /* Darker shade on hover */
+  border-color: #0056b3; /* Optional: Change border color on hover */
+}
+
+.nav-buttons .nav-link {
+  margin-left: 10px; /* Adjust spacing between buttons */
+}
+
+.btn-link {
+  color: rgb(67, 21, 216); /* Ensure button text color is white */
+}
+
+/* Additional styling for buttons */
+.logout {
+  cursor: pointer; /* Change cursor on hover for logout button */
+}
+.login{
+  color: white;
+   background-color: transparent;
+   margin-left: 10px;
+   margin-right: -80px;
+
+}
+.nav{
+  color: white;
+  margin-top: 10px;
+  margin-left: 2px;
+  margin-right: 7px;
+  position: fixed,
+}

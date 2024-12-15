@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .sidebar {
+    width: 250px; /* Fixed width for sidebar */
+    background-color: #f4f4f4;
+    padding: 15px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Adds a shadow for better visual separation */
+    position: relative;
+    z-index: 1;
+    margin-right: 10px;
+  }
+  
+  .sidebar .side-link {
+    display: block;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: #000;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  .sidebar .side-link:hover {
+    background-color: #ddd;
+  }
+  
+  .sidebar .active-link {
+    font-weight: bold;
+    background-color: #ccc;
+  }
+  
+  .content {
+    flex-grow: 1; /* Allow the content to take up the remaining space */
+    padding: 20px;
+    background-color: #fff;
+    overflow: auto; /* In case content overflows, allow scrolling */
+    z-index: 0;
+    margin-left: 100px;
+    text-align: right;
+    font-size: 200%;
+    color: blue;
+
+  }
+  

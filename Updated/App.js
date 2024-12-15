@@ -16,13 +16,12 @@ import Home from './components/Home';
 import Land from './components/Land';
 import Login from './components/Login'; // Import Login component
 import LoginRegistration from './components/LoginRegistration';
-import Logins from './components/logins';
 import MapComponent from './components/MapComponent';
 import New from './components/New';
 import Profile from './components/Profile';
 import Sidebar from './components/Sidebar';
 import SowingForm from './components/SowingForm';
-
+import Logins from './components/logins';
 
 function App() {
   // Using Auth0 for authentication
@@ -40,8 +39,6 @@ function App() {
     <div>
       <Header />
       <Routes>
-      
-
         <Route path="/sidebar" element={<Sidebar />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />

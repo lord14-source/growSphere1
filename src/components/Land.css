@@ -1,0 +1,202 @@
+/* General layout */
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  height: auto; /* Change to auto to accommodate content */
+}
+
+/* Search and Filters section */
+.search-container,
+.filters-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px; /* Reduce bottom margin */
+  width: 100%;
+  max-width: 800px;
+
+}
+
+/* Search bar styling */
+.search-container .search-input {
+  width: 70%;
+  padding: 8px; /* Reduce padding */
+  font-size: 14px; /* Smaller font size */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Reduce shadow */
+}
+
+.search-button {
+  padding: 8px 15px; /* Reduce padding */
+  font-size: 14px; /* Smaller font size */
+  background-color: #00a1d6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px; /* Reduce margin */
+}
+
+.search-button:hover {
+  background-color: #008db4;
+}
+
+/* Filters section */
+.filters-container input,
+.filters-container select {
+  padding: 8px; /* Reduce padding */
+  margin: 0 5px; /* Reduce margin */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px; /* Smaller font size */
+  width: 120px; /* Fixed width to minimize space usage */
+  margin-top: -40px;
+}
+
+.filters-container input:focus,
+.filters-container select:focus {
+  border-color: #00a1d6;
+  outline: none;
+}
+
+/* Chart section */
+.chart-container {
+  background-color: white;
+  padding: 15px; /* Reduce padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 100%;
+}
+
+.chart-container h3 {
+  font-size: 20px; /* Smaller font size */
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 15px; /* Reduce bottom margin */
+}
+
+@media (max-width: 768px) {
+  .filters-container input,
+  .filters-container select {
+    width: 40%; /* Increase width on smaller screens */
+    margin: 5px;
+  }
+  .search-container .search-input {
+    width: 70%;
+  }
+}
+.fpo{
+  display: flex;
+  gap:65px;
+}
+/* Land.css */
+.main-container {
+  display: flex;
+}
+/* Sidebar Styling */
+.sidebar {
+  background-color: #12d1ae; /* Set the background to white */
+  
+  padding: 20px;
+  width: 200px; /* Fixed width for sidebar */
+  box-shadow: 0 4px 8px rgba(231, 222, 222, 0.1); /* You can change the box-shadow if needed */
+  margin-top: 65px; /* Space below fixed header */
+  margin-right: 2px;
+  position: relative;
+}
+.side-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #0f1011;
+  font-weight: bold;
+  border-radius: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+
+}
+
+.side-link:hover {
+  background-color: #9ba3ab;
+  color: white;
+}
+
+.side-link:active {
+  background-color: #0056b3;
+  color: white;
+}
+
+.dashboard-container {
+  margin-left: 250px; /* This ensures that the main content doesn't overlap with the sidebar */
+  padding: 20px;
+}
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px;
+  width: 300px;
+}
+
+.filters-container {
+  margin-bottom: 20px;
+}
+
+.state-dropdown,
+.district-dropdown,
+.filter-input {
+  margin-right: 10px;
+  padding: 10px;
+  width: 200px;
+}
+
+.fpo {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.btn.custom-blue-btn {
+  padding: 10px 20px;
+  background-color: #00a1d6;
+  font-size: 14px;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+}
+
+.btn.custom-blue-btn:hover {
+  background-color: #008ba3;
+}
+
+.chart-title {
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+.redirect-link {
+  margin-top: 20px;
+}
+
+.redirect-link a {
+  color: #00a1d6;
+  text-decoration: none;
+}
+
+.redirect-link a:hover {
+  text-decoration: underline;
+}

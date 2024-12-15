@@ -1,0 +1,20 @@
+/* Dashboard container */
+.dashboard-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  .chart{
+    display: flex;
+  }
+  
+  /* Chart Area */
+  .chart-area {
+    width: 75%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
